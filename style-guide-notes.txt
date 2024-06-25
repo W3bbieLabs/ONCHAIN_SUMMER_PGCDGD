@@ -1,0 +1,11 @@
+# Colors
+* PGC Blue Main: #305DF6
+* PGC Blue Alt: #29447BD
+* PGC Black Main #000001
+* PGC Base White: #FFFFFF
+* PGC Off White: #F2F2F2
+
+# Typeface
+* Lineal (files included in repo)
+* Weight(s): Black, Medium, Light, Regular
+* Styling: Uppercase with character spacing of 2px
