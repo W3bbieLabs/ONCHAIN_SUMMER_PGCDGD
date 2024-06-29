@@ -1,0 +1,49 @@
+:root {
+    --pgc_blue_main:            #305DF6;
+    --pgc_blue_alt:             #2947BD;
+    --pgc_black_main:           #000001;
+    --pgc_base_white:           #ffffff;
+    --pgc_off_white:            #F2F2F2;
+    --base_padding:             28px;
+    --extended_padding:         48px;
+    --minimal_padding:          4px;
+    --triple_minimal_padding:   12px;
+    --checkbox_w_h:             20px;
+}
+
+body, html {
+    z-index:            -3;
+    width:              100vw;
+    height:             100vh;
+    margin:             0;
+    top:                0;
+    left:               0;
+    padding:            0;
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    background:         var(--pgc_blue_main);
+    font-family:        "linealmedium", sans-serif;
+    color:              var(--pgc_base_white);
+}
+.page 
+{
+    display:            flex;
+    width:              100%;
+    height:             100%;
+    align-items:        center;
+    justify-content:    center;
+    flex-direction:     column;
+
+}
+.platform-title {
+    font-family:        "linealblack";
+    font-size:          16px;
+    text-align:         center;
+    text-transform:     uppercase;
+    letter-spacing: 2px;
+}
+
+.sub-heading{}
+/*MEMBER FORM*/
+

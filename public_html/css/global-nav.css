@@ -1,0 +1,96 @@
+.global-navigation {
+    display:            flex;
+    flex-direction:     row;
+    flex-wrap: wrap;
+    position:           fixed;
+    gap:                0px;
+    top:                4px;
+    left:               0;
+    align-items:        center;
+    justify-content:    space-evenly;
+    width:              100%;
+    height:             136px;
+    z-index:            3;
+/*    background: var(--pgc_blue_alt);*/
+}
+#not-yet-available:hover{
+    background: gray;
+    color: var(--pgc_blue_main);
+    cursor: not-allowed;
+}
+#not-yet-available:hover::before
+{
+    content: "[TBA]";
+}
+.global-nav-link:link,
+.global-nav-link:visited,
+.global-nav-link:active
+{
+    color:              var(--pgc_off_white);
+    text-transform:     uppercase;
+    font-size:          16px;
+    text-decoration:    none;
+    padding:            var(--triple_minimal_padding);
+    font-family:        inherit;
+    color:              currentColor;
+    background:         var(--pgc_blue_alt);
+    border-radius:      var(--base_padding);
+    border:             0px;
+    letter-spacing: 2px;
+
+}
+.global-nav-link:hover 
+{
+    background:     var(--pgc_off_white);
+    color:          var(--pgc_blue_alt);
+    cursor:         pointer;
+}
+
+.global-nav-link:active
+{
+    scale:      0.96;
+    cursor:     pointer;
+}
+
+@media (width <= 796px)
+{
+    .global-navigation 
+    {
+        display:            flex;
+        flex-direction:     row;
+        flex-wrap:          wrap;
+        position:           fixed;
+        gap:                0px;
+        top:                4px;
+        left:               0;
+        align-items:        center;
+        justify-content:    space-evenly;
+        width:              100%;
+        height:             112px;
+        z-index:            3;
+        
+    }
+    .global-nav-link:link,
+    .global-nav-link:visited,
+    .global-nav-link:active
+    {
+        font-size: 16px;
+    }
+}
+
+@media (height <= 796px)
+{
+    .global-navigation 
+    {
+        top:                0;
+        gap:                2px;
+        height:             84px;
+        background: var(--pgc_blue_alt);
+    }
+    .global-nav-link:link,
+    .global-nav-link:visited,
+    .global-nav-link:active
+    {
+        font-size: 10px;
+    }
+}

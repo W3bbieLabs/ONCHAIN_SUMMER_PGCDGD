@@ -1,0 +1,81 @@
+.mp3-player 
+{
+    position:           fixed;
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    padding-left:       var(--triple_minimal_padding);
+    padding-right:      var(--triple_minimal_padding);
+    gap:                16px;
+    z-index:            4;
+    top:                24px;
+    right:              24px;
+    height:             36px;
+    width:              fit-content;
+    background:         var(--pgc_blue_main);
+    background:         none;
+    border-radius:      32px;
+    border:             2px solid var(--pgc_base_white);
+}
+
+.mp3-control 
+{
+    border:             none;
+    font-family:        inherit;
+    text-transform:     uppercase;
+    background:         none;
+    font-size:          16px;
+    color:              var(--pgc_base_white);
+    border-radius:      16px;
+    ine-height:         1.0;
+    word-spacing:       2px;
+    letter-spacing:     2px;
+}
+
+.mp3-control:hover
+{
+    background:         var(--pgc_base_white);
+    color:              var(--pgc_blue_alt);
+    cursor:             pointer;
+    border:             1px solid var(--pgc_base_white);
+}
+
+.mp3-track-title 
+{
+    text-transform:     uppercase;
+    font-family:        "linealmedium";
+    font-size:          16px;
+    letter-spacing:     2px;
+}
+.mp3-player-link:link,
+.mp3-player-link:visited,
+.mp3-player-link:active 
+{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+.mp3-player-link:hover 
+{
+    text-decoration: underline;
+}
+
+@media (width <= 796px)
+{
+    .mp3-player {
+        left:   8px;
+        top:    8px;
+        height: 28px;
+        width:  fit-content;
+    }
+    .mp3-track-title 
+    {
+        font-size:          12px;
+        letter-spacing:     2px;
+    }
+    .mp3-control 
+    {
+        font-size: 10px;
+    }
+}

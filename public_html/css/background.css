@@ -1,0 +1,32 @@
+/*background.css*/
+
+.background
+{
+    display:            flex;
+    height:             100%;
+    width:              100%;
+    align-items:        center;
+    justify-content:    center;
+    padding-top:        64vh;
+    padding-bottom:     64vh;
+}
+
+.background-heading 
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size:      64px;
+    text-align:     center;
+    padding-left:   72px;
+    padding-right:  72px;
+    line-height:    0.92;
+    word-break:     break-word;
+}
+
+@media (width <= 796px)
+{
+    .background-heading  
+    {
+        font-size: 36px;
+    }
+}

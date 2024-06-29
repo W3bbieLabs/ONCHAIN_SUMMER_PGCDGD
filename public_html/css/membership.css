@@ -1,0 +1,90 @@
+/*membership.css*/
+
+.membership
+{
+    top:                0;
+    left:               0;
+    margin:             0;
+    align-items:        center;
+    flex-direction:     column;
+    justify-content:    center;
+    padding-top:        220vh;
+    padding-bottom:     32%;
+}
+
+.membership-content-container 
+{
+    display:            flex;
+    flex-direction:     column;
+    height:             100vh;
+    width:              100vw;
+    align-items:        center;
+    justify-content:    center;
+}
+
+.membership-section 
+{
+    display:            flex;
+    align-items:        center;
+    flex-direction:     column;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.membership-content-section-heading 
+{
+    text-transform:     uppercase;
+    letter-spacing:     0.48px;
+    font-size:          64px;
+    text-align:         center;
+    padding-left:       72px;
+    padding-right:      72px;
+    word-break:         break-word;
+}
+.percent-callout {
+    font-size: 44px;
+    margin-right: 16px;
+    ont-family:        "lineallight";
+}
+.callout
+{
+/*    text-decoration: overline;*/
+/*    padding: 4px;*/
+/*    background: var(--pgc_base_white);*/
+/*    color: var(--pgc_blue_main);*/
+}
+.membership-content-section-body 
+{
+    letter-spacing:     2px;
+    font-size:          28px;
+    font-family:        "linealmedium";
+    margin:             8px;
+    text-transform:     uppercase;
+}
+.membership-content-section-body:hover 
+{
+    background:     var(--pgc_base_white);
+    color:          var(--pgc_blue_alt);
+    padding-left:   2px;
+    padding-right:  2px;
+    cursor:         default;
+}
+
+@media (width <= 796px)
+{
+    
+    .membership-content-section-heading 
+    {
+        font-size: 36px;
+        text-align: center;
+    }
+    .membership-content-section-body
+    {
+        font-size: 24px;
+        text-align: center;
+        margin: 16px;
+    }
+    .percent-callout 
+    {
+        font-size: 32px;
+    }
+}

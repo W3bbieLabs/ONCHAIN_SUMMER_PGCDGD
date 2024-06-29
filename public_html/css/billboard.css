@@ -1,0 +1,213 @@
+@-webkit-keyframes rotatingAnimationX {
+  0%{
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@keyframes rotatingAnimationX {
+  0%{
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes rotatingAnimationY {
+  0%{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotatingAnimationY {
+  0%{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotatingAnimationZ {
+  0%{
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotatingAnimationZ {
+  0%{
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.billboard {
+  position:             fixed;
+  top:                  0;
+  left:                 0;
+  padding:              0;
+  margin:               0;
+  z-index:              0;
+/*  background-image:     linear-gradient(to bottom, #305df6, #2e57e7, #2d52d9, #2b4ccb, #2947bd);*/
+  width:                100vw;
+  height:               100vh;
+  overflow:             hidden;
+  -webkit-perspective:  1200px;
+  perspective:          3200px;
+  display:              -webkit-box;
+  display:              -ms-flexbox;
+  display:              flex;
+  -webkit-box-pack:     center;
+  -ms-flex-pack:        center;
+  justify-content:      center;
+  -webkit-box-align:    center;
+  -ms-flex-align:       center;
+  align-items:          center;
+  scale:                0.72;
+  background: none;
+}
+.billboard > div 
+{
+  -webkit-transform-style:  preserve-3d;
+  transform-style:          preserve-3d;
+}
+
+.bb-outer 
+{
+  -webkit-transform:  rotateX(41deg) rotateY(-179deg) rotateZ(0deg);
+  transform:          rotateX(72deg) rotateY(-179deg) rotateZ(0deg);
+}
+
+.bb-container 
+{
+  -webkit-transform-style:  preserve-3d;
+  transform-style:          preserve-3d;
+  -webkit-animation:        10s rotatingAnimationX linear infinite;
+  animation:                10s rotatingAnimationX linear infinite;
+}
+
+.bb-container > div 
+{
+  position:                     absolute;
+  top:                          0;
+  left:                         0;
+  background-size:              cover;
+  background-position:          center center;
+  -webkit-backface-visibility:  visible;
+  backface-visibility:          visible;
+}
+
+.bb-top, 
+.bb-bottom, 
+.bb-side-right 
+{
+  background-size:      auto auto;
+  background-repeat:    repeat;
+  background-position:  top left;
+}
+
+.bb-front 
+{
+  background-image: url("../public/media/images/billboard/bb-cover.jpg");
+  width:              1075px;
+  height:             526.75px;
+  -webkit-transform:  translate3d(-537.5px ,-263.375px ,127.925px) translate3d(0,0,0) rotateY(0deg);
+  transform:          translate3d(-537.5px ,-263.375px ,127.925px) translate3d(0,0,0) rotateY(0deg);
+}
+
+.bb-side-left 
+{
+  background-image:   url('../public/media/images/billboard/bb-spine.jpg');
+  width:              255.85px;
+  height:             526.75px;
+  -webkit-transform:  translate3d(-537.5px ,-263.375px ,127.925px) 
+                      translate3d(-127.925px, 0, -127.925px) 
+                      rotateY(-90deg);
+  transform:          translate3d(-537.5px ,-263.375px ,127.925px) 
+                      translate3d(-127.925px, 0, -127.925px) 
+                      rotateY(-90deg);
+}
+.bb-side-right 
+{
+  background-image:   url('../public/media/images/billboard/bb-side.png');
+  width:              255.85px;
+  height:             526.75px;
+  -webkit-transform:  translate3d(-537.5px ,-263.375px ,127.925px) 
+                      translate3d(947.075px, 0px,-127.925px) 
+                      rotateY(90deg);
+  transform:          translate3d(-537.5px ,-263.375px ,127.925px) 
+                      translate3d(947.075px, 0px,-127.925px) 
+                      rotateY(90deg);
+}
+
+.bb-top 
+{
+  background-image:     url('../public/media/images/billboard/bb-top.jpg');
+  background-position:  bottom right;
+  width:                1075px;
+  height:               255.85px;
+  -webkit-transform:    translate3d(-537.5px, -263.375px ,127.925px) 
+                        translate3d(0px, -127.925px, -127.925px) 
+                        rotateX(90deg);
+  transform:            translate3d(-537.5px, -263.375px ,127.925px) 
+                        translate3d(0px, -127.925px, -127.925px) 
+                        rotateX(90deg);
+}
+
+.bb-bottom 
+{
+  background-image:   url('../public/media/images/billboard/bb-top.jpg');
+  width:              1075px;
+  height:             255.85px;
+  -webkit-transform:  translate3d(-537.5px ,-263.375px ,127.925px) 
+                      translate3d(0px, 398.825px, -127.925px) 
+                      rotateX(-90deg);
+  transform:          translate3d(-537.5px ,-263.375px ,127.925px) 
+                      translate3d(0px, 398.825px, -127.925px) 
+                      rotateX(-90deg);
+}
+
+.bb-back 
+{
+  background-image:   url('../public/media/images/billboard/bb-back.jpg');
+  width:              1075px;
+  height:             526.75px;
+  -webkit-transform:  translate3d(-537.5px ,-263.375px ,127.925px) 
+                      translate3d(0,0, -255.85px) 
+                      rotateY(180deg);
+  transform:          translate3d(-537.5px ,-263.375px ,127.925px) 
+                      translate3d(0,0, -255.85px) 
+                      rotateY(180deg);
+}
+
+@media (width <= 796px)
+{
+    .billboard
+    {
+        visibility: hidden;
+    }
+}
+      
